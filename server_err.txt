@@ -1,0 +1,121 @@
+2026-07-11 11:15:30,362 [INFO] ai_engine.nlp_processor: NLPProcessor: using advanced rule-based pipeline.
+2026-07-11 11:15:30,366 [INFO] ai_engine.watsonx_client: WatsonxClient: running in DEMO mode (no live API calls).
+2026-07-11 11:15:30,385 [INFO] database.connection: Database engine created: sqlite:///./library_demo.db
+2026-07-11 11:15:30,390 [INFO] database.connection: Database schema initialised.
+2026-07-11 11:15:30,428 [INFO] database.seed: Database already seeded — skipping.
+2026-07-11 11:15:30,721 [INFO] library-agent: =======================================================
+2026-07-11 11:15:30,726 [INFO] library-agent:   Library AI Agent — IBM watsonx.ai Studio
+2026-07-11 11:15:30,727 [INFO] library-agent: =======================================================
+2026-07-11 11:15:30,727 [INFO] library-agent:   Demo mode : True
+2026-07-11 11:15:30,727 [INFO] library-agent:   watsonx.ai: True
+2026-07-11 11:15:30,727 [INFO] library-agent:   Host      : http://0.0.0.0:5000
+2026-07-11 11:15:30,727 [INFO] library-agent: =======================================================
+2026-07-11 11:15:30,741 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.112:5000
+2026-07-11 11:15:30,741 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2026-07-11 12:08:34,418 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:08:34] "GET / HTTP/1.1" 200 -
+2026-07-11 12:08:39,569 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:08:39] "POST /api/auth/demo-login HTTP/1.1" 200 -
+2026-07-11 12:09:27,788 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "PUT /api/auth/profile HTTP/1.1" 200 -
+2026-07-11 12:09:27,802 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:09:27,850 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:09:27,877 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:09:27,887 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:09:27,894 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:09:27,902 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/admin/stats HTTP/1.1" 200 -
+2026-07-11 12:09:27,924 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/agent/trending HTTP/1.1" 200 -
+2026-07-11 12:09:27,949 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/books/search?limit=30&q= HTTP/1.1" 200 -
+2026-07-11 12:09:27,997 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:09:27] "GET /api/auth/search-history?limit=5 HTTP/1.1" 200 -
+2026-07-11 12:11:33,315 [INFO] ai_engine.agent: Query: 'Suggest AI books for my semester' | Intent: recommend_books | Authors: [] | Subjects: ['Artificial Intelligence'] | Year: None-None
+2026-07-11 12:11:33,432 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:33] "POST /api/agent/query HTTP/1.1" 200 -
+2026-07-11 12:11:34,828 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:34] "PUT /api/auth/reading-history/7449b458-410d-49ba-8eff-3e9311088f0e HTTP/1.1" 200 -
+2026-07-11 12:11:34,869 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:34] "GET /api/books/7449b458-410d-49ba-8eff-3e9311088f0e HTTP/1.1" 200 -
+2026-07-11 12:11:40,704 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:40] "POST /api/auth/wishlist/7449b458-410d-49ba-8eff-3e9311088f0e HTTP/1.1" 200 -
+2026-07-11 12:11:40,730 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:40] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:11:43,515 [INFO] ai_engine.agent: Query: 'Suggest AI books for my semester' | Intent: recommend_books | Authors: [] | Subjects: ['Artificial Intelligence'] | Year: None-None
+2026-07-11 12:11:43,613 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:43] "POST /api/agent/query HTTP/1.1" 200 -
+2026-07-11 12:11:45,051 [INFO] ai_engine.agent: Query: 'Suggest AI books for my semester' | Intent: recommend_books | Authors: [] | Subjects: ['Artificial Intelligence'] | Year: None-None
+2026-07-11 12:11:45,133 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:45] "POST /api/agent/query HTTP/1.1" 200 -
+2026-07-11 12:11:48,113 [INFO] ai_engine.agent: Query: 'books published after 2022' | Intent: search_by_year | Authors: [] | Subjects: [] | Year: 2022-None
+2026-07-11 12:11:48,183 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:48] "POST /api/agent/query HTTP/1.1" 200 -
+2026-07-11 12:11:50,257 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:50] "PUT /api/auth/reading-history/44b91f4e-3bab-4d3b-9909-8aabd94d13c2 HTTP/1.1" 200 -
+2026-07-11 12:11:50,277 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:11:50] "GET /api/books/44b91f4e-3bab-4d3b-9909-8aabd94d13c2 HTTP/1.1" 200 -
+2026-07-11 12:12:00,863 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:12:00] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:12:00,874 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:12:00] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:12:38,874 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:12:38] "GET /api/books/6115490c-261a-4138-b621-e2056bd989d7 HTTP/1.1" 200 -
+2026-07-11 12:13:11,641 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:13:11] "GET / HTTP/1.1" 200 -
+2026-07-11 12:13:11,923 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:13:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-07-11 12:13:14,231 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:13:14] "[35m[1mGET /api/auth/google HTTP/1.1[0m" 503 -
+2026-07-11 12:14:35,339 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:14:35] "POST /api/auth/demo-login HTTP/1.1" 200 -
+2026-07-11 12:15:04,266 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "PUT /api/auth/profile HTTP/1.1" 200 -
+2026-07-11 12:15:04,280 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:15:04,304 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:15:04,307 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:15:04,319 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:15:04,324 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:15:04,326 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/admin/stats HTTP/1.1" 200 -
+2026-07-11 12:15:04,359 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/agent/trending HTTP/1.1" 200 -
+2026-07-11 12:15:04,379 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/books/search?limit=30&q= HTTP/1.1" 200 -
+2026-07-11 12:15:04,407 [INFO] werkzeug: 192.168.29.112 - - [11/Jul/2026 12:15:04] "GET /api/auth/search-history?limit=5 HTTP/1.1" 200 -
+2026-07-11 12:19:59,682 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:19:59] "GET / HTTP/1.1" 200 -
+2026-07-11 12:19:59,910 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:19:59] "[33mGET /api/auth/status HTTP/1.1[0m" 404 -
+2026-07-11 12:20:16,393 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "POST /api/auth/demo-login HTTP/1.1" 200 -
+2026-07-11 12:20:16,405 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:20:16,431 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:20:16,436 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:20:16,438 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/admin/stats HTTP/1.1" 200 -
+2026-07-11 12:20:16,446 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:20:16,447 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:20:16,473 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/agent/trending HTTP/1.1" 200 -
+2026-07-11 12:20:16,494 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/books/search?limit=30&q= HTTP/1.1" 200 -
+2026-07-11 12:20:16,521 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:20:16] "GET /api/auth/search-history?limit=5 HTTP/1.1" 200 -
+2026-07-11 12:21:39,010 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "[36mGET / HTTP/1.1[0m" 304 -
+2026-07-11 12:21:39,301 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "[33mGET /api/auth/status HTTP/1.1[0m" 404 -
+2026-07-11 12:21:39,308 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/auth/me HTTP/1.1" 200 -
+2026-07-11 12:21:39,375 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:21:39,417 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/admin/stats HTTP/1.1" 200 -
+2026-07-11 12:21:39,459 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:21:39,468 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:21:39,525 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:21:39,527 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:21:39,593 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/agent/trending HTTP/1.1" 200 -
+2026-07-11 12:21:39,679 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/auth/search-history?limit=5 HTTP/1.1" 200 -
+2026-07-11 12:21:39,690 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:21:39] "GET /api/books/search?limit=30&q= HTTP/1.1" 200 -
+2026-07-11 12:23:09,229 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET / HTTP/1.1" 200 -
+2026-07-11 12:23:09,531 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "[33mGET /api/auth/status HTTP/1.1[0m" 404 -
+2026-07-11 12:23:09,546 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/auth/me HTTP/1.1" 200 -
+2026-07-11 12:23:09,602 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:23:09,646 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/admin/stats HTTP/1.1" 200 -
+2026-07-11 12:23:09,685 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:23:09,714 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:23:09,748 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:23:09,783 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:23:09,826 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/agent/trending HTTP/1.1" 200 -
+2026-07-11 12:23:09,885 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/auth/search-history?limit=5 HTTP/1.1" 200 -
+2026-07-11 12:23:09,912 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:09] "GET /api/books/search?limit=30&q= HTTP/1.1" 200 -
+2026-07-11 12:23:37,661 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:37] "[36mGET / HTTP/1.1[0m" 304 -
+2026-07-11 12:23:37,858 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:37] "[33mGET /api/auth/status HTTP/1.1[0m" 404 -
+2026-07-11 12:23:37,871 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:37] "GET /api/auth/me HTTP/1.1" 200 -
+2026-07-11 12:23:37,929 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:37] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:23:37,978 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:37] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:23:37,990 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:37] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:23:37,998 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:37] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:23:38,002 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:38] "GET /api/admin/stats HTTP/1.1" 200 -
+2026-07-11 12:23:38,020 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:38] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:23:38,056 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:38] "GET /api/agent/trending HTTP/1.1" 200 -
+2026-07-11 12:23:38,078 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:38] "GET /api/books/search?limit=30&q= HTTP/1.1" 200 -
+2026-07-11 12:23:38,158 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:38] "GET /api/auth/search-history?limit=5 HTTP/1.1" 200 -
+2026-07-11 12:23:40,003 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:40] "POST /api/auth/logout HTTP/1.1" 200 -
+2026-07-11 12:23:50,939 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:50] "[36mGET / HTTP/1.1[0m" 304 -
+2026-07-11 12:23:51,979 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:51] "[33mGET /api/auth/status HTTP/1.1[0m" 404 -
+2026-07-11 12:23:52,003 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/auth/me HTTP/1.1" 200 -
+2026-07-11 12:23:52,032 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:23:52,125 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/auth/search-history?limit=20 HTTP/1.1" 200 -
+2026-07-11 12:23:52,146 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/auth/wishlist HTTP/1.1" 200 -
+2026-07-11 12:23:52,208 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/admin/stats HTTP/1.1" 200 -
+2026-07-11 12:23:52,224 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/health HTTP/1.1" 200 -
+2026-07-11 12:23:52,274 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/auth/reading-history HTTP/1.1" 200 -
+2026-07-11 12:23:52,318 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/agent/trending HTTP/1.1" 200 -
+2026-07-11 12:23:52,366 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/auth/search-history?limit=5 HTTP/1.1" 200 -
+2026-07-11 12:23:52,423 [INFO] werkzeug: 127.0.0.1 - - [11/Jul/2026 12:23:52] "GET /api/books/search?limit=30&q= HTTP/1.1" 200 -

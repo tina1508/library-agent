@@ -1,0 +1,20 @@
+# Library AI Agent - Python Dependencies
+# IBM Cloud Lite + watsonx.ai Studio
+
+# Core web framework
+Flask==3.0.3
+flask-cors==4.0.1
+
+# Database (SQLite for demo; uncomment psycopg2 for IBM Cloud PostgreSQL)
+SQLAlchemy==2.0.30
+# psycopg2-binary==2.9.9
+
+# Utilities
+python-dotenv==1.0.1
+requests==2.32.3
+
+# --- IBM Cloud SDKs (optional - only needed when DEMO_MODE=false) ---
+# Uncomment these when you have IBM Cloud credentials configured:
+# ibm-watsonx-ai==1.1.2
+# ibm-watson==8.1.0
+# ibmcloudant==0.9.1
